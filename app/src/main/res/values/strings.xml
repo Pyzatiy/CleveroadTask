@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Android-request-for-Cleveroad</string>
+    <string name="name_string">Hi, My name is</string>
+    <string name="email_address_string">My email address is</string>
+    <string name="birthday_string">My birthday is</string>
+    <string name="address_string">My address is</string>
+    <string name="phone_number_string">My phone number is</string>
+    <string name="password_string">My password is</string>
+
+
+
+</resources>
