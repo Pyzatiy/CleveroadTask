@@ -1,9 +1,13 @@
 package com.example.android_request_for_cleveroad.objects;
 
 public class Name {
-    public String title;
-    public String first;
-    public String last;
+    private String title;
+    private String first;
+    private String last;
+
+
+    public Name() {
+    }
 
     public String getTitle() {
         return title;
@@ -27,5 +31,10 @@ public class Name {
 
     public void setLast(String last) {
         this.last = last;
+    }
+
+    @Override
+    public String toString() {
+        return title + " "  + last + " " + first + " ";
     }
 }

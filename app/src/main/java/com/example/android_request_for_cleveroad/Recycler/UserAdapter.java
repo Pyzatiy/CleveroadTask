@@ -10,19 +10,19 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.android_request_for_cleveroad.ImageLoader;
+import com.example.android_request_for_cleveroad.utils.ImageLoader;
 import com.example.android_request_for_cleveroad.R;
-import com.example.android_request_for_cleveroad.objects.User;
+import com.example.android_request_for_cleveroad.objects.SimpleUser;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder> {
     private final Context context;
-    private List<User> users = new ArrayList<>();
+    private List<SimpleUser> simpleUsers = new ArrayList<>();
 
-    public void setUsers(List<User> users) {
-        this.users = users;
+    public void setUsers(List<SimpleUser> users) {
+        this.simpleUsers = users;
         notifyDataSetChanged();
     }
 
@@ -40,16 +40,16 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        User user = users.get(position);
-        ImageLoader.imgLoad(context,user.getPicture().getThumbnail(),holder.img_user_view);
+        SimpleUser simpleUser = simpleUsers.get(position);
+        ImageLoader.imgLoad(context,simpleUser.getPicture(),holder.img_user_view);
         holder.general_tv.setText(R.string.name_string);
-        holder.info_tv.setText(String.format("%s%s%s", user.getName().getTitle(), user.getName().getFirst(), user.getName().getLast()));
+        holder.info_tv.setText(simpleUser.getFullName());
 
     }
 
     @Override
     public int getItemCount() {
-        return users.size();
+        return simpleUsers.size();
     }
 
 

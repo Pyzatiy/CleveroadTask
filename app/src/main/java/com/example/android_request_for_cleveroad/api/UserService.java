@@ -1,4 +1,4 @@
-package com.example.android_request_for_cleveroad;
+package com.example.android_request_for_cleveroad.api;
 
 import com.example.android_request_for_cleveroad.objects.RootResult;
 import retrofit2.Call;

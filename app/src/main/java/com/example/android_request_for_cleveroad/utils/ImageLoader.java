@@ -1,4 +1,4 @@
-package com.example.android_request_for_cleveroad;
+package com.example.android_request_for_cleveroad.utils;
 
 import android.content.Context;
 import android.graphics.Bitmap;

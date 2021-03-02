@@ -1,7 +1,8 @@
 package com.example.android_request_for_cleveroad.objects;
 
-public class User {
 
+
+public class User {
 
     private String gender;
     private Name name;

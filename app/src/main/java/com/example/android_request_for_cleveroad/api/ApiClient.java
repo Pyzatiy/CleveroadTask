@@ -1,4 +1,4 @@
-package com.example.android_request_for_cleveroad;
+package com.example.android_request_for_cleveroad.api;
 
 import okhttp3.OkHttpClient;
 import okhttp3.logging.HttpLoggingInterceptor;
@@ -18,7 +18,7 @@ public class ApiClient {
         retrofit = new Retrofit.Builder()
                 .baseUrl("https://randomuser.me/api/")
                 .addConverterFactory(GsonConverterFactory.create())
-                .client(client)
+//                .client(client)
                 .build();
 
 
